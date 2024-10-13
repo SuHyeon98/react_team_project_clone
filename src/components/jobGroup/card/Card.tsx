@@ -1,13 +1,13 @@
 export type JobCardProps = {
   title: string;
   description: string;
-  icon: string;
+  imgUrl: string;
 };
 
-const JobCard = ({ title, description, icon }: JobCardProps) => {
+const JobCard = ({ title, description, imgUrl }: JobCardProps) => {
   return (
     <div className="job-card">
-      <img src={icon} alt={title} className="job-icon" />
+      <img src={imgUrl} alt={title} className="job-icon" />
       <div className="job-text">
         <h3 className="job-title">{title}</h3>
         <p>{description}</p>
